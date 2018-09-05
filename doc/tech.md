@@ -39,6 +39,20 @@
 |**/report/log/project/{name}/{num}**|Preview last count operation {**num**} in peoject {**name**}|
 
 
+## Objects
+
+## Notification
+
+```
+{
+   Id           string // Id unig identificator 
+   Operation    strig  // Operation in system
+   Project      string // Project name
+   Module       string // Module in system name
+   Datetime     string // Timestamp Date and time operation
+   Status       string // Critical, Info, Warn, Danger
+}
+```
 
 
 
