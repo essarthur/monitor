@@ -19,10 +19,29 @@
 
 |Api|Method|Description|
 |--|--|--|
-|/api/add/|POST|Adding information to system|
-|/api/project/{Pojectname}|GET|Sending all information by project
-|/api/project/{Pojectname}|DELETE|Deleting all information by project
-|/api/report/last/{Number}|GET|Getting information about last {.} operation
+|**/api/add/**|POST|Adding information to system|
+|**/api/project/{Pojectname}**|POST|Make new project
+|**/api/project/{Pojectname}**|GET|Sending all information by project
+|**/api/project/{Pojectname}**|DELETE|Deleting all information by project
+|**/api/report/last/{Number}**|GET|Getting information about last {.} operation
+|**/api/adm/user/{Name}**|POST|Adding new user in system
+|**/api/adm/user/{Name}**|GET|Get information abaut user in system by name
+|**/api/adm/user/{all}**|GET|Get information abaut all users in system
+|**/api/adm/user/{Name}**|DELETE|Delete user form system
+
+
+## Reports 
+
+|Path|Description report|
+|--|--|--|
+|**/report/log/{num}**|Preview last {**num**} operation all projects sorting by desc time|
+|**/report/log/project/{name}/{num}**|Preview last count operation {**num**} in peoject {**name**}|
+|**/report/log/project/{name}/{num}**|Preview last count operation {**num**} in peoject {**name**}|
+
+
+
+
+
 
 
 
