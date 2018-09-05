@@ -1,3 +1,4 @@
 # monitor
 Getting notification from program for analyse
-ss
+Получение информации из разных систем для их последующего анализа
+
