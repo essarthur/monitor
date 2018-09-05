@@ -54,6 +54,18 @@
 }
 ```
 
+## Statuses
+|Status|Description|
+|--|--|
+|Info|Information|
+|Warn|Warning|
+|Dang|Danger|
+|Critical|Critical|
+
+
+
+
+
 
 
 
