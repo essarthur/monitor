@@ -1,0 +1,10 @@
+#!/bin/bash
+
+clear
+echo "Старт сервиса"
+
+# Start
+./clmon  "Pryzm" "Modul" "Textxx dcddd dddd ssdd" "info"
+echo File is copping to server monitor
+
+

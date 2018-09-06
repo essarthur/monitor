@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+clear
+echo Старт сервиса
+
+# Установки среды
+export GOPATH=$HOME/app/ETHEREUM/MONITOR/app
+#export GOPATH=$PWD
+export GOROOT=$HOME/go
+export PATH=$PATH:$GOROOT/bin
+
+# Start
+# go build -i -o /tmp/go-code-check
+go build -o clmon
+./clmon Prrysm Modul Text info
