@@ -41,7 +41,7 @@
 
 ## Objects
 
-## Notification
+### Structure log
 
 ```
 {
@@ -51,27 +51,38 @@
    Module       string // Module in system name
    Datetime     string // Timestamp Date and time operation
    Status       string // Critical, Info, Warn, Danger
+   BlockId      string // Block Id
+   AccountId    string // AccountID/ContractID
+   CreateTime   string // Block CreationTime
 }
 ```
 
-## Statuses
+### Цель: логирование параметров
+- Структура проекта:
+  корневой пакет   (gess)
+  вложенные пакеты (core, miner etc.)
+ 
+### Задача: 
+Создать логирование состояния блокчейн в реальном времени с использованем RethinkDB
+ 
+### Описание: 
+Параметры должны передаваться на сервер RethinkDB, которы   их отображает
+
+### Требования:
+ 1. запуск через параметр коммандной строки (./gess -rlog 111.222.333.444 )/111.222.333.444- ip- адрес сервера логирования
+ 2. Структура лога  {Project, Module, Ststus, BlockId, Block CreationTime, AccountID/ContractID}
+ 
+### Tasks
+1. Создать вложенный пакет логирования (rlog)
+2. Интегрировать https://github.com/GoRethink/gorethink
+3. Реализовать интрефейс rLogger  аналогично essentiaHybrid/log/logger.go - New , Info ,
+4. Инициализировать логгер  essentiaHybrid/ess/peer.go     (rlog *rLogger )
+5. Добавить вызовы rlog.Info(...) в еужные места по коду
+
+### Statuses
 |Status|Description|
 |--|--|
 |Info|Information|
 |Warn|Warning|
 |Dang|Danger|
 |Critical|Critical|
-
-
-
-
-
-
-
-
-
-
-
-
-
-
