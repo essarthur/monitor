@@ -28,24 +28,23 @@
 
 
 
-### Установка количества шард
-Method ("POST")
-**/api/set/shard/{{count}}**
-
-Return 
-{"status":"ok", "id":11234}
-
-### Установка количества транзакций
-Method ("POST")
-**/api/set/tx/{{count}}**
+### Установка количества шард  
+Method ("POST")    
+**/api/set/shard/{{count}}**    
 
 Return :
-{"status":"ok", "id":11235}
+**{"status":"ok", "id":11234}**   
+
+### Установка количества транзакций
+Method ("POST")   
+**/api/set/tx/{{count}}**   
+
+Return :    
+{"status":"ok", "id":11235}   
 
 
 # Получение информации от сервера для дашборда
-Method ("GET")
-
+Method ("GET")   
 
 **/api/output/**
 
@@ -59,3 +58,21 @@ Method ("GET")
   "status":   "success"
   }
 ```
+
+
+# Количество транзакций в пуле
+Method ("GET")   
+
+**/api/pool/**
+
+```json
+{
+  "id",       123446,
+  "txcount":  1000,
+  "time":     "2018-12-25 15:34:45",
+  "status":   "success"
+  }
+```
+
+
+
