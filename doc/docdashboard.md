@@ -54,29 +54,12 @@
 4. Количсетва шард
 5. Время прохождения одной транзакции
 
-#### Установка количества шард  
-Method (**POST**)    
-
-**/api/set/shard/{{count}}**    
-
-Return :
-**{"status":"ok", "id":11234}**   
-
-#### Установка количества транзакций
-Method (**POST**)   
-
-**/api/set/tx/{{count}}**   
-
-
-Return :    
-{"status":"ok", "id":11235}   
-
-
 #### Получение информации от сервера для дашборда
+----
 Method (**GET**)   
 
 
-**/api/output/**
+**.../api/output/**
 
 
 Return :
@@ -91,14 +74,34 @@ Return :
   }
 ```
 
+#### Установка количества шард 
+----
+Method (**POST**)    
+
+**.../api/set/shard/{{count}}**    
+
+Return :
+**{"status":"ok", "id":11234}**   
+
+#### Установка количества транзакций
+----
+Method (**POST**)   
+
+**.../api/set/tx/{{count}}**   
+
+
+Return :    
+{"status":"ok", "id":11235}   
+
 
 #### Количество транзакций в пуле
+----
 Показывает количество транзакций ожидающих блок
 
 Method (**GET**)   
 
 
-**/api/pool/**
+**.../api/pool/**
 
 
 Return
@@ -116,9 +119,7 @@ Return
 
 Method (**GET**)   
 
-
-**/api/block/**
-
+**.../api/block/**
 
 Return
 ```json
